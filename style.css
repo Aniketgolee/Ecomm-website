@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    color: #087F5B;
+}
+ul li,a{
+    list-style-type: none;
+    color: #56595e;
+    text-decoration: none;
+    font-weight: bold;
+}
+.list-item ul{
+    display: flex;
+    gap: 25px;
+}
+.cover-img{
+    background-image: url(image/taylor-D9_QOTmbFAg-unsplash.jpg);
+    height: 35rem;
+    background-position: center;
+    color: rgb(248, 244, 244);
+    font-weight: bold;
+    
+}
+.headline{
+   width: 22rem;
+   padding-top: 15%;
+   margin-left: 100px;
+   font-size: 25px;
+}
+#firstHead,#lastHead{
+    text-align: center;
+}
+#lastHead a button{
+    width: 100px;
+    background-color: rgb(11, 77, 11);
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    
+}
+#lastHead a button:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+
+@media (max-width:420px){
+    .headline{
+        width: 15rem;
+    }
+    #firstHead,#lastHead{
+        text-align: left;
+    }
+    .over-img{
+        background-size: cover;
+    }
+}
+.cards{
+    margin: 30px;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: #56595e;
+    
+}
+.container .card{
+    width: 270px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 0 0 7px rgba(0,0,0,0.8);
+    background-color: #EDF2F7;
+    border-radius: 20px;
+}
+.container .card .product-image{
+    width: 230px;
+    margin: 20px auto;
+}
+.container .card .product-image img{
+    width: 100%;
+    transition:0.4s ;
+}
+.container .card .product-image img:hover{
+    transform: scale(1.1);
+}
+.container .card .product-image h4{
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.container .card .btn{
+    width: 100%;
+}
+.container .card .btn button{
+    width: 100%;
+    padding: 10px;
+    background: #087F5B;
+    border: 1px solid gray;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 0 0 15px 15px;
+}
+.container .card .btn button:hover{
+    transform: scale(1.1);
+}
+footer{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+
